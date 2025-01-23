@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.perfil img {
+    width: 270px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.nome-perfil {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.função {
+    color: #777;
+}
+
+.bio {
+    max-width: 600px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.bio .nome-bio {
+    font-size: 20px;
+}
+
+.bio .descrição {
+    color: #555;
+    font-size: 1rem;
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.card a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
