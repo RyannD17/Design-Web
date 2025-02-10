@@ -1,11 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 body{
-    font-family: "Lato", serif;
+    font-family: "Lato";
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
     justify-content: center;
     align-items: center;
 }
 
-.her .cima{
-    border-bottom: 1px solid white;
+.cabeçalho {
+    background-color: rgb(32, 60, 134, 1);
+    width: 100%;
 }
+
+.comunicação {
+    color: rgb(196, 196, 196);
+    font-size: 12px;
+
+}
+
+.sub-cabeçalho-1 {
+    display: flex;
+    justify-content: right;
+    margin: 15px 300px 0px 0px;
+}
+
+.redes-sociais {
+    margin-left: 30px;
+    width: 15px;
+}
+
+hr {
+    opacity: 0.2;
+    background: #FFF;
+}
+
+.tópicos {
+    display: flex;
+}   
