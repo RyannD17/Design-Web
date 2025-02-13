@@ -1,29 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-body{
-    font-family: "Lato";
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .cabeçalho {
-    background-color: rgb(32, 60, 134, 1);
-    width: 100%;
-}
-
-.comunicação {
-    color: rgb(196, 196, 196);
-    font-size: 12px;
-
+    background: #003366;
+    color: white;
+    padding: 10px 20px;
 }
 
 .sub-cabeçalho-1 {
     display: flex;
     justify-content: right;
-    margin: 15px 300px 0px 0px;
+    margin: 15px 400px 0px 0px;
+}
+
+.comunicação {
+    color: rgb(196, 196, 196);
+    font-size: 12px;
 }
 
 .redes-sociais {
@@ -31,11 +26,108 @@ body{
     width: 15px;
 }
 
-hr {
-    opacity: 0.2;
-    background: #FFF;
+.sub-cabeçalho-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .tópicos {
     display: flex;
-}   
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+section img {
+    max-width: 100%;
+}
+
+.container-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.container-imagens div {
+    flex: 1 1 calc(20% - 10px);
+    text-align: center;
+}
+
+.container-imagens img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    text-align: left;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ol {
+    margin-bottom: 10px;
+}
+
+.footer-section img {
+    max-width: 100%;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .sub-cabeçalho-2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tópicos {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .tópicos ol {
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+    }
+
+    .container-imagens {
+        flex-direction: column;
+    }
+
+    .container-imagens div {
+        flex: 1 1 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
